@@ -20,7 +20,6 @@ public class MyFacade {
         return myFacadeObj;
     }
     public void startServer(){
-        System.out.println("Start working......");
         obj.startBooting();
         obj.readSystemConfigFile();
         obj.init();
@@ -29,7 +28,6 @@ public class MyFacade {
         obj.createSystemObjects();
     }
     public void stopServer(){
-        System.out.println("After work done.........");
         obj.releaseProcesses();
         obj.destory();
         obj.destroySystemObjects();

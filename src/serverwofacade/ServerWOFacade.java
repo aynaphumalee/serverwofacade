@@ -8,7 +8,10 @@ package serverwofacade;
 public class ServerWOFacade {
     public static void main(String[] args) {
         MyFacade obj = MyFacade.getMyFacadeObject();
+        //User Interface พวก Print ควรเอาไว้ที่ Client นะ จะได้ยืดหยุ่น
+        System.out.println("Start working......");
         obj.startServer();
+        System.out.println("After work done.........");
         obj.stopServer();
     }
 }
